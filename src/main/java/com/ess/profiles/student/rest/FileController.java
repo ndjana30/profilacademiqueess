@@ -75,4 +75,11 @@ public class FileController {
         List<File> researchFiles = fileRepository.findAll().stream().filter(f->f.getName().contains(identification)).collect(Collectors.toList());
         return researchFiles.isEmpty() ? new ResponseEntity<>("No file found", HttpStatus.NO_CONTENT) : new ResponseEntity<>(researchFiles, HttpStatus.OK);
     }
+
+    @GetMapping("all")
+    public Object getAllFiles()
+    {
+        List<File> researchFiles = fileRepository.findAll();
+        return new ResponseEntity<>(researchFiles, HttpStatus.OK);
+    }
 }
