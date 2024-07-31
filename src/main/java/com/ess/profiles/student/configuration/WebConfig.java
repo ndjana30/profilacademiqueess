@@ -13,6 +13,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("*") // Allow requests from your React app
                 .allowedMethods("*") // Allow all HTTP methods
                 .allowedHeaders("*") // Allow all headers
-                .allowCredentials(true); // Allow credentials like cookies
+                .allowCredentials(false); // Allow credentials like cookies
     }
 }
