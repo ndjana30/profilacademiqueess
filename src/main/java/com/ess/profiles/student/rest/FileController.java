@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = "https://profileswebess.onrender.com/")
+@CrossOrigin(origins = "wss://profileswebess.onrender.com:10000/ws")
 @RestController
 @RequestMapping("api/v1/files")
 // @CrossOrigin("*")
