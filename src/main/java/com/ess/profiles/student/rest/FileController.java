@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 // @CrossOrigin(origins ={"wss://profileswebess.onrender.com:10000/ws","https://profilacademiqueess.onrender.com"})
 @RestController
 @RequestMapping("api/v1/files")
-@CrossOrigin("*")
+@CrossOrigin(origins="*")
 public class FileController {
 
     @Autowired
