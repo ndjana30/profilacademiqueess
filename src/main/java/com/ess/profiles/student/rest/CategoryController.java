@@ -24,9 +24,13 @@ public class CategoryController {
     private CategoryRepository categoryRepository;
 
     @PostMapping("create")
-    public Object createCategory(@RequestParam("name") String name) {
+    public Object createCategory(@RequestParam("name") String name,
+                                 @RequestParam("classe") String classe,
+                                 @RequestParam("year") String year) {
         Category c = new Category();
         c.setName(name);
+        c.setYear(year);
+        c.setClasse(classe);
         categoryRepository.save(c);
         return new ResponseEntity<>("Category created Successfully", HttpStatus.OK);
     }
