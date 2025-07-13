@@ -1,8 +1,9 @@
 package com.ess.profiles.student.models;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.*;
 
-import javax.persistence.*;
+
 import java.util.List;
 
 @Table(name = "category")

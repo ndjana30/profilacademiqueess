@@ -2,8 +2,8 @@ package com.ess.profiles.student.models;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.*;
 
-import javax.persistence.*;
 
 @Table(name = "files")
 @Entity
